@@ -1,0 +1,16 @@
+*.pkl
+README_COMMANDS.txt
+
+results_data/
+scratch.md
+custom_scripts/config.py
+custom_scripts/scratch.py
+custom_scripts/sqlalchemy_scratch.py
+custom_scripts/push_to_db.py
+custom_scripts/*.txt
+*.pyc
+custom_scripts/__init__.py
+custom_scripts/__init__.pyc
+.idea/
+custom_scripts/create_copy_sql_queries.py
+.DS_Store
