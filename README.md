@@ -28,3 +28,8 @@ Change the number of guests in the script to control how many guest profiles you
 5) As postgres user run the copy commands in 
 DB_AS_A_SERVICE/sql/insert_from_files.sql
 
+## Built With
+* Python
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details

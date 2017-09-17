@@ -16,7 +16,7 @@ store_into = '/home/hsinghal/workspace/DB_AS_A_SERVICE/custom_scripts'
 # Identify the population distribution across cities
 # -------------------------------
 # World cities data
-world_cities = pd.read_table(os.path.join(data_dir, 'worldcitiespop.txt'), sep=",", index_col=None)
+world_cities = pd.read_table(os.path.join(data_dir, 'worldcitiespop_sample.txt'), sep=",", index_col=None)
 # Keep only US cities
 us_cities = world_cities[world_cities.Country == 'us']
 # Keep cities with available population numbers
@@ -46,7 +46,7 @@ with open(os.path.join(store_into, 'city_pop_distr.pkl'), 'wb') as fout:
 # Get Names data
 # -----------------
 # Read all names from NationalNames.csv
-national_names = pd.read_table(os.path.join(data_dir, 'NationalNames.csv'), sep=",", index_col=False)
+national_names = pd.read_table(os.path.join(data_dir, 'NationalNames_sample.csv'), sep=",", index_col=False)
 national_names.columns
 national_names.head()
 firstnames_namedb = pd.read_table(os.path.join(data_dir, 'namedb_first_names_us.txt'), header=None)
@@ -122,7 +122,7 @@ with open(os.path.join(store_into,'email_domains_distr.pkl'),'wb') as fout:
 # Get Git user name for email address
 # ----------------
 
-gitdata = open(os.path.join(data_dir, '2015-01-01-15.json'), 'r').readlines()
+gitdata = open(os.path.join(data_dir, 'git_names.json'), 'r').readlines()
 git_userids = []
 for i in gitdata:
     i = i.strip()
